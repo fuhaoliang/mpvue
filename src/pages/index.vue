@@ -28,6 +28,7 @@
       <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
+    <a href="/pages/user" class="counter">去往user示例页面</a>
     <a href="/pages/counter" class="counter">去往Vuex示例页面</a>
     <a href="/pages/wxcomponent" class="counter">去往wxcomponent示例页面</a>
   </div>

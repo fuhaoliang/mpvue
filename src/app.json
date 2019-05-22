@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/message",
+    "pages/application",
+    "pages/addressBook",
+    "pages/user",
     "pages/index",
     "pages/counter",
     "pages/wxcomponent",
@@ -8,10 +12,39 @@
       "subPackage": true
     }
   ],
+  "usingComponents": {
+    "van-search": "vant-weapp/dist/search/index",
+    "van-field": "vant-weapp/dist/field/index",
+    "i-input": "iview/input/index"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": false,
+    "color": "#ff0000",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/application",
+        "text": "应用"
+      },
+      {
+        "pagePath": "pages/addressBook",
+        "text": "通讯录"
+      },
+      {
+        "pagePath": "pages/user",
+        "text": "我的"
+      }
+    ]
   }
 }
