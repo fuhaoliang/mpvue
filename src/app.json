@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/user",
     "pages/message",
     "pages/application",
     "pages/addressBook",
-    "pages/user",
     "pages/index",
     "pages/counter",
     "pages/wxcomponent",
@@ -15,35 +15,45 @@
   "usingComponents": {
     "van-search": "vant-weapp/dist/search/index",
     "van-field": "vant-weapp/dist/field/index",
-    "i-input": "iview/input/index"
+    "van-cell": "vant-weapp/dist/cell/index",
+    "van-cell-group": "vant-weapp/dist/cell-group/index"
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
   },
   "tabBar": {
     "custom": false,
-    "color": "#ff0000",
-    "selectedColor": "#ffffff",
-    "backgroundColor": "#000000",
+    "color": "#bbbbbb",
+    "selectedColor": "#6590eb",
+    "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/message",
-        "text": "消息"
+        "text": "消息",
+        "iconPath": "static/image/message_icon.png",
+        "selectedIconPath": "static/image/message_hover_icon.png"
       },
       {
         "pagePath": "pages/application",
-        "text": "应用"
+        "text": "应用",
+        "iconPath": "static/image/application_icon.png",
+        "selectedIconPath": "static/image/application_hover_icon.png"
       },
       {
         "pagePath": "pages/addressBook",
-        "text": "通讯录"
+        "text": "通讯录",
+        "iconPath": "static/image/addressbook_icon.png",
+        "selectedIconPath": "static/image/addressbook_hover_icon.png"
       },
       {
         "pagePath": "pages/user",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "static/image/user_icon.png",
+        "selectedIconPath": "static/image/user_hover_icon.png"
       }
     ]
   }

@@ -1,10 +1,11 @@
 <template>
   <div class="message-body">
+    <h1>{{ value }}</h1>
     <div>{{ value }}</div>
       <van-field
       v-model="value"
       placeholder="请输入用户名"/>
-    
+
     <van-search v-model="value" placeholder="请输入搜索关键词" />
     <input type="text" v-model="value" >
     <h1>1111</h1>
