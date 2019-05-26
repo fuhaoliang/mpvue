@@ -10,21 +10,21 @@ export default {
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    wx.loadFontFace({
-      family: 'Bold',
-      source: 'url("https://huiy176-oa.oss-cn-beijing.aliyuncs.com/mini_project/font/PingFang%20Bold.ttf")',
-      success: console.log
-    })
-    wx.loadFontFace({
-      family: 'Medium',
-      source: 'url("https://huiy176-oa.oss-cn-beijing.aliyuncs.com/mini_project/font/PingFang%20Medium.ttf")',
-      success: console.log
-    })
-    wx.loadFontFace({
-      family: 'Regular',
-      source: 'url("https://huiy176-oa.oss-cn-beijing.aliyuncs.com/mini_project/font/PingFang%20Regular.otf")',
-      success: console.log
-    })
+    // wx.loadFontFace({
+    //   family: 'Bold',
+    //   source: 'url("https://huiy176-oa.oss-cn-beijing.aliyuncs.com/mini_project/font/PingFang%20Bold.ttf")',
+    //   success: console.log
+    // })
+    // wx.loadFontFace({
+    //   family: 'Medium',
+    //   source: 'url("https://huiy176-oa.oss-cn-beijing.aliyuncs.com/mini_project/font/PingFang%20Medium.ttf")',
+    //   success: console.log
+    // })
+    // wx.loadFontFace({
+    //   family: 'Regular',
+    //   source: 'url("https://huiy176-oa.oss-cn-beijing.aliyuncs.com/mini_project/font/PingFang%20Regular.otf")',
+    //   success: console.log
+    // })
     // eslint-disable-next-line
     console.log('app created and cache logs by setStorageSync')
   }

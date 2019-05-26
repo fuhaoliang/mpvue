@@ -1,9 +1,10 @@
 {
   "pages": [
-    "pages/user",
-    "pages/message",
-    "pages/application",
-    "pages/addressBook",
+    "pages/user/userInfo",
+    "pages/user/index",
+    "pages/message/index",
+    "pages/application/index",
+    "pages/addressBook/index",
     "pages/index",
     "pages/counter",
     "pages/wxcomponent",
@@ -16,13 +17,14 @@
     "van-search": "vant-weapp/dist/search/index",
     "van-field": "vant-weapp/dist/field/index",
     "van-cell": "vant-weapp/dist/cell/index",
-    "van-cell-group": "vant-weapp/dist/cell-group/index"
+    "van-cell-group": "vant-weapp/dist/cell-group/index",
+    "van-dialog": "vant-weapp/dist/dialog/index"
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "white",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#eeeeee"
   },
   "tabBar": {
@@ -32,25 +34,25 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/message",
+        "pagePath": "pages/message/index",
         "text": "消息",
         "iconPath": "static/image/message_icon.png",
         "selectedIconPath": "static/image/message_hover_icon.png"
       },
       {
-        "pagePath": "pages/application",
+        "pagePath": "pages/application/index",
         "text": "应用",
         "iconPath": "static/image/application_icon.png",
         "selectedIconPath": "static/image/application_hover_icon.png"
       },
       {
-        "pagePath": "pages/addressBook",
+        "pagePath": "pages/addressBook/index",
         "text": "通讯录",
         "iconPath": "static/image/addressbook_icon.png",
         "selectedIconPath": "static/image/addressbook_hover_icon.png"
       },
       {
-        "pagePath": "pages/user",
+        "pagePath": "pages/user/index",
         "text": "我的",
         "iconPath": "static/image/user_icon.png",
         "selectedIconPath": "static/image/user_hover_icon.png"

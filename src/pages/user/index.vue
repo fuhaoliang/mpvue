@@ -73,28 +73,28 @@ export default {
 </script>
 <style lang="less">
 .suo-icon{
-  background-image: url('../../static/image/suo_icon.png');
+  background-image: url('../../../static/image/suo_icon.png');
 }
 .qianming-icon{
-  background-image: url('../../static/image/qianming_icon.png');
+  background-image: url('../../../static/image/qianming_icon.png');
 }
 .shoucang-icon{
-  background-image: url('../../static/image/shoucang_icon.png');
+  background-image: url('../../../static/image/shoucang_icon.png');
 }
 .shizhong-icon{
-  background-image: url('../../static/image/shizhong_icon.png');
+  background-image: url('../../../static/image/shizhong_icon.png');
 }
 .wenben-icon{
-  background-image: url('../../static/image/wenben_icon.png');
+  background-image: url('../../../static/image/wenben_icon.png');
 }
 .shanchu-icon{
-  background-image: url('../../static/image/shanchu_icon.png');
+  background-image: url('../../../static/image/shanchu_icon.png');
 }
 .wode-icon{
-  background-image: url('../../static/image/wode_icon.png');
+  background-image: url('../../../static/image/wode_icon.png');
 }
 .user-info-icon{
-  background-image: url('../../static/image/user_info_icon.png');
+  background-image: url('../../../static/image/user_info_icon.png');
 }
 page{
   background: #f6f6f6;
@@ -111,7 +111,7 @@ page{
     margin-bottom: 80rpx;
     width: 100%;
     height: 216rpx;
-    background:url('../../static/image/user_header_bg.png') no-repeat;
+    background:url('../../../static/image/user_header_bg.png') no-repeat;
     background-size: cover;
     .heder-info{
       position: relative;
