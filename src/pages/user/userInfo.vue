@@ -1,11 +1,17 @@
 <template>
   <div class="userInfo-body">
     <van-cell-group>
-      <van-cell custom-class="userInfo-avatar" value-class="userInfo-avatar-img" title="头像" is-link >
-        <view slot="value">
+      <van-cell custom-class="userInfo-avatar" content-class="userInfo-avatar-img" title="头像" is-link >
+        <view slot="content">
           <img @click="dialogShow = true" src="https://img.yzcdn.cn/public_files/2017/12/18/fd78cf6bb5d12e2a119d0576bedfd230.png"/>
         </view>
       </van-cell>
+      <van-field
+          :value="username"
+          placeholder="请输入用户名"
+          :border="true"
+          @change="onChange"
+        />
       <van-cell title="姓名" value="内容" is-link></van-cell>
       <van-cell title="性别" value="内容" is-link></van-cell>
       <van-cell title="生日" value="内容" is-link></van-cell>
@@ -21,13 +27,32 @@
       <van-cell title="职务" value="内容" is-link></van-cell>
     </van-cell-group>
     <van-dialog 
+      use-slot
       id="van-dialog" 
       @cancel="closeDialog"
       @confirm="confirmDialog"
       :show="dialogShow"
       show-cancel-button
       asyncClose=true>
-      <h1>11111</h1>
+      <div class="dialog-box">
+        <p class="title">姓名</p>
+        <van-cell-group>
+           <!-- <van-field
+            :value="username"
+            label="手机号111"
+            placeholder="请输入手机号"
+            error-message="手机号格式错误"
+          /> -->
+          <van-field
+            :value="username"
+            placeholder="请输入用户名"
+            :border="true"
+            @change="onChange"
+          />
+        </van-cell-group>
+        
+          <!-- <input placeholder="这是一个可以自动聚焦的input" auto-focus /> -->
+      </div>
     </van-dialog>
   </div>
 </template>
@@ -39,6 +64,7 @@ export default {
   },
   data () {
     return {
+      username: '1111',
       dialogShow: false
     }
   },
@@ -49,6 +75,10 @@ export default {
     // })
   },
   methods: {
+    onChange (event) {
+    // event.detail 为当前输入的值
+      console.log(event.detail)
+    },
     closeDialog () {
       console.info('我取消了')
       this.dialogShow = false
@@ -96,6 +126,15 @@ page{
           height: 130rpx;
         }
       }
+    }
+  }
+  .dialog-box{
+    width: 100%;
+    height: 228rpx;
+    box-sizing: border-box;
+    padding: 30rpx 50rpx;
+    .title{
+      text-align: center;
     }
   }
 }
