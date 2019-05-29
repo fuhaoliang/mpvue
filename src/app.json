@@ -18,7 +18,10 @@
     "van-field": "vant-weapp/dist/field/index",
     "van-cell": "vant-weapp/dist/cell/index",
     "van-cell-group": "vant-weapp/dist/cell-group/index",
-    "van-dialog": "vant-weapp/dist/dialog/index"
+    "van-dialog": "vant-weapp/dist/dialog/index",
+    "van-picker": "vant-weapp/dist/picker/index",
+    "van-popup": "vant-weapp/dist/popup/index",
+    "van-datetime-picker":"vant-weapp/dist/datetime-picker/index"
   },
   "window": {
     "backgroundTextStyle": "light",

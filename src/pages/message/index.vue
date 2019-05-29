@@ -7,7 +7,7 @@
       placeholder="请输入用户名"/>
 
     <van-search v-model="value" placeholder="请输入搜索关键词" />
-    <input type="text" v-model="value" >
+    <input type="text" v-model="value" placeholder="请输入搜索关键词">
     <h1>1111</h1>
     <i-input :value="value" title="收货人" placeholder="名字" />
   </div>
