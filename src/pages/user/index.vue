@@ -9,12 +9,12 @@
         </div>
         <div class="header-info-r">
           <p class="user-school">麻省理工大学</p>
-          <p class="user-info"><i class="icon user-info-icon"/>个人信息</p>
+          <a class="user-info" href="/pages/user/userInfo"><i class="icon user-info-icon"/>个人信息</a>
         </div>
       </div>
     </div>
     <van-cell-group>
-      <van-cell title="账号安全" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="账号安全" is-link url="/pages/user/salf/index?a=1" link-type="navigateTo" >
         <view slot="icon">
           <i class="icon suo-icon"></i>
         </view>
@@ -51,6 +51,7 @@
           <i class="icon wode-icon"></i>
         </view>
       </van-cell>
+      <h1 @click="a">11111</h1>
     </van-cell-group>
   </div>
 </template>
@@ -60,18 +61,25 @@ export default {
   config: {
     navigationBarBackgroundColor: '#8babf0',
     navigationBarTitleText: '我的',
-    navigationBarTextStyle: 'white',
-    backgroundColor: '#eeeeee'
+    navigationBarTextStyle: 'white'
   },
   mounted () {
     // wx.setTabBarBadge({
     //   index: 0,
     //   text: '1'
     // })
+  },
+  methods: {
+    a () {
+      wx.navigateTo({url: '/pages/user/salf/index?a=1'})
+    }
   }
 }
 </script>
 <style lang="less">
+page{
+  background: #f6f6f6;
+}
 .suo-icon{
   background-image: url('../../../static/image/suo_icon.png');
 }

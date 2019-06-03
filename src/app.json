@@ -1,7 +1,10 @@
 {
+  
   "pages": [
-    "pages/user/userInfo",
     "pages/user/index",
+    "pages/user/userInfo",
+    "pages/user/salf/index",
+    "pages/user/salf/password",
     "pages/message/index",
     "pages/application/index",
     "pages/addressBook/index",
