@@ -10,10 +10,12 @@
             placeholder="请输入旧密码"
             border="false"
           /> -->
-          <label >
-            旧密码:
-            <input type="password" v-model="formData.oldPassword">
-          </label>
+          <!-- <label class="my-field">
+            <p class="field-name">旧密码:</p>
+            <input class="field-ipt" placeholder-class="field-ipt-placeholder" type="password" v-model="formData.oldPassword" placeholder="请输入旧密码">
+            <p class="inline"></p>
+          </label> -->
+          <my-field title="旧密码"  :formObj.sync="formData" keyName="oldPassword" />
           <van-field
             :value="formData.newPassword"
             type="password"
@@ -41,16 +43,20 @@
   </div>
 </template>
 <script>
+import myField from '@/components/myField'
 export default {
   name: 'Salf',
   config: {
     navigationBarTitleText: '账号安全'
   },
+  components: {
+    myField
+  },
   data () {
     return {
       type: '',
       formData: {
-        oldPassword: '',
+        oldPassword: '1111',
         newPassword: '',
         newTwoPassword: ''
       }
