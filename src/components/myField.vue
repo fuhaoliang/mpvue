@@ -4,10 +4,11 @@
       <input 
         class="field-ipt" 
         placeholder-class="field-ipt-placeholder" 
-        type="password" 
+        :type="type" 
         :value="formObj[keyName]"
         @input="handlerIpt" 
         :placeholder="placeholder">
+        <slot></slot>
       <p class="inline"></p>
   </label>
 </template>
@@ -22,7 +23,7 @@ export default {
     },
     keyName: {
       type: String,
-      require: true
+      required: true
     },
     formObj: {
       type: Object,

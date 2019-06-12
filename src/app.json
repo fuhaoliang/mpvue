@@ -1,16 +1,23 @@
 {
   
   "pages": [
+    "pages/addressBook/index",
+    "pages/addressBook/organization/index",
     "pages/user/index",
     "pages/user/userInfo",
     "pages/user/salf/index",
     "pages/user/salf/password",
+    "pages/user/signature/index",
+    "pages/user/remind/index", 
+    "pages/user/collection/index",
+    "pages/user/opinion/index",
+    "pages/user/about/index",
     "pages/message/index",
     "pages/application/index",
-    "pages/addressBook/index",
     "pages/index",
     "pages/counter",
     "pages/wxcomponent",
+    "pages/userMessage",
     {
       "path": "packageA/logs",
       "subPackage": true
@@ -24,7 +31,14 @@
     "van-dialog": "vant-weapp/dist/dialog/index",
     "van-picker": "vant-weapp/dist/picker/index",
     "van-popup": "vant-weapp/dist/popup/index",
-    "van-datetime-picker":"vant-weapp/dist/datetime-picker/index"
+    "van-datetime-picker":"vant-weapp/dist/datetime-picker/index",
+    "van-button": "vant-weapp/dist/button/index",
+    "van-switch-cell": "vant-weapp/dist/switch-cell/index",
+    "van-switch": "vant-weapp/dist/switch/index",
+    "van-swipe-cell": "vant-weapp/dist/swipe-cell/index",
+    "van-icon": "vant-weapp/dist/icon/index",
+    "van-collapse": "vant-weapp/dist/collapse/index",
+    "van-collapse-item": "vant-weapp/dist/collapse-item/index"
   },
   "window": {
     "backgroundTextStyle": "light",

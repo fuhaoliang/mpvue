@@ -19,43 +19,44 @@
           <i class="icon suo-icon"></i>
         </view>
       </van-cell>
-      <van-cell title="签名" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="签名" is-link url="/pages/user/signature/index" link-type="navigateTo" >
         <view slot="icon">
           <i class="icon qianming-icon"></i>
         </view>
       </van-cell>
-      <van-cell title="收藏" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="收藏" is-link url="/pages/user/collection/index" link-type="navigateTo" >
         <view slot="icon">
           <i class="icon shoucang-icon"></i>
         </view>
       </van-cell>
-      <van-cell title="提醒" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="提醒" is-link url="/pages/user/remind/index" link-type="navigateTo" >
         <view slot="icon">
           <i class="icon shizhong-icon"></i>
         </view>
       </van-cell>
     </van-cell-group>
     <van-cell-group>
-      <van-cell title="意见反馈" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="意见反馈" is-link url="/pages/user/opinion/index" link-type="navigateTo" >
         <view slot="icon">
           <i class="icon wenben-icon"></i>
         </view>
       </van-cell>
-      <van-cell title="清除缓存" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="清除缓存" is-link @click="clearStorage()">
         <view slot="icon">
           <i class="icon shanchu-icon"></i>
         </view>
       </van-cell>
-      <van-cell title="关于我们" is-link url="/pages/dashboard/index" link-type="navigateTo" >
+      <van-cell title="关于我们" is-link url="/pages/user/about/index" link-type="navigateTo" >
         <view slot="icon">
           <i class="icon wode-icon"></i>
         </view>
       </van-cell>
-      <h1 @click="a">11111</h1>
     </van-cell-group>
+     <van-dialog id="van-dialog"></van-dialog>
   </div>
 </template>
 <script>
+import Dialog from '#/js/dialog.js'
 export default {
   name: 'User',
   config: {
@@ -72,6 +73,13 @@ export default {
   methods: {
     a () {
       wx.navigateTo({url: '/pages/user/salf/index?a=1'})
+    },
+    clearStorage () {
+      Dialog.confirm({
+        message: '确认要删除缓存么？'
+      }).then(() => {
+        wx.clearStorage()
+      })
     }
   }
 }
